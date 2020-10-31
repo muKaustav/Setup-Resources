@@ -26,16 +26,16 @@ def data_summary(x,y):
     r2_score = reg.score(x, y).round(3)
     adj_r2_score = adj_r2(x, y).round(3)
     bias = reg.intercept_.round(5)
-    print("R2 value is", end=" ")
+    print("R2", end=" ")
     print(r2_score, end="\n")
-    print("Adjusted R2 value is", end=" ")
+    print("Adjusted R2", end=" ")
     print(adj_r2_score, end="\n")
-    print("Bias value is", end=" ")
+    print("Bias", end=" ")
     print(bias, end="\n")
 
 
 def feature_summary(x,y):
-    feature = pd.DataFrame([['SAT'],['Rand 1,2,3']], columns=['Features'])
+    feature = pd.DataFrame([data = inputs.columns.values, columns=['Features'])
     feature['Weights'] = reg.coef_.round(3)
     feature['P_values'] = freg(x, y)[1].round(3)
     return feature
