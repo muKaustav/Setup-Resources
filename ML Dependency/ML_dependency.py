@@ -35,11 +35,7 @@ def data_summary(x,y):
 
 
 def feature_summary(x,y):
-    feature = pd.DataFrame([data = inputs.columns.values, columns=['Features'])
+    feature = pd.DataFrame(data = inputs.columns.values, columns=['Features'])
     feature['Weights'] = reg.coef_.round(3)
     feature['P_values'] = freg(x, y)[1].round(3)
     return feature
-
-# def values(x,y):
-
-#     return data_summary(x,y)
