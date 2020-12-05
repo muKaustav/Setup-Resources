@@ -7,9 +7,8 @@ import seaborn as sns
 sns.set()
 
 from sklearn.linear_model import LinearRegression
+from sklearn.preprocessing import MinMaxScaler as mms
 from sklearn.feature_selection import f_regression as freg
-from sklearn.preprocessing import StandardScaler as stdsclr
-
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 
 
