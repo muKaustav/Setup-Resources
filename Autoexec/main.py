@@ -3,6 +3,6 @@ with open('updateLib.txt') as f:
 
 with open('script.bat', 'a') as out:
     for i in range(len(lines)):
-        out.write("pip install " + lines[i].split( )[0] + " -U" + '\n')
+        out.write("conda install " + lines[i].split( )[0] + " -U" + '\n')
 
 
