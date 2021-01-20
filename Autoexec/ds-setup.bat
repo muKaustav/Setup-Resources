@@ -1,0 +1,11 @@
+call conda install scipy -y
+call conda install matplotlib -y
+call conda install seaborn -y
+call conda install scikit-learn -y 
+call conda install sklearn -y
+call conda install statsmodels -y 
+call conda install pandas -y
+call conda install numpy -y
+call conda install Keras -y
+call conda install tensorflow -y 
+call conda install ipykernel -y
