@@ -69,6 +69,8 @@ def feature_summary(x, y):
     feature['P_values'] = freg(x, y)[1].round(3)
     return feature
 
+# function to print the prediction table
+
 
 def predict(a: np.array, b: np.array):
     predictions = pd.DataFrame(np.exp(a), columns=['Predictions'])
